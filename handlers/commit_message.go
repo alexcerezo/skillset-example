@@ -31,3 +31,9 @@ func CommitMessage(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 }
+
+// Name: random_commit_message
+// Inference description: Generates a random commit message
+// URL: https://<your ngrok domain>/random-commit-message
+// Parameters: { "type": "object" }
+// Return type: String
