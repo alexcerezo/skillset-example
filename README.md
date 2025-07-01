@@ -28,7 +28,7 @@ Use agents instead if you need:
 
 This extension showcases the skillset approach by providing three simple endpoints that generate random development data:
 - Random commit messages
-- Lorem ipsum text generation
+- URL shortener
 - Random user data
 
 ## Getting Started
@@ -72,22 +72,19 @@ URL: https://<your ngrok domain>/random-commit-message
 Parameters: { "type": "object" }
 Return type: String
 ---
-Name: random_lorem_ipsum 
-Inference description: Generates a random Lorem Ipsum text.  Responses should have html tags present.
-URL: https://<your ngrok domain>/random-lorem-ipsum
+Name: shorten_url
+Inference description: Shortens a long URL using the CleanURI service. Send a JSON body with the "url" field and receive the shortened URL in the response.
+URL: https://related-striking-swift.ngrok-free.app/shorten-url
 Parameters: 
 {
-   "type": "object",
-   "properties": {
-      "number_of_paragraphs": {
-         "type": "number",
-         "description": "The number of paragraphs to be generated.  Must be between 1 and 10 inclusive"
-      },
-      "paragraph_length": {
-         "type": "string",
-         "description": "The length of each paragraph.  Must be one of \"short\", \"medium\", \"long\", or \"verylong\""
-      }
-   }
+  "type": "object",
+  "properties": {
+    "url": {
+      "type": "string",
+      "description": "The long URL to be shortened."
+    }
+  },
+  "required": ["url"]
 }
 Return type: String
 ---
@@ -120,7 +117,7 @@ Here's some example things:
 This bot provides a passthrough to a couple of other APIs:
 
 * For commit messages, https://whatthecommit.com/
-* For Lorem Ipsum, https://loripsum.net/
+* For shorting URLs, https://cleanuri.com/
 * For user data, https://randomuser.me/
 
 ## Documentation

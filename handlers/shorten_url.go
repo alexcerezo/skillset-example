@@ -73,5 +73,4 @@ func ShortenURL(w http.ResponseWriter, r *http.Request) {
 //   },
 //   "required": ["url"]
 // }
-// }
 // Return type: String
