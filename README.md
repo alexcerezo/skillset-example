@@ -74,7 +74,7 @@ Return type: String
 ---
 Name: shorten_url
 Inference description: Shortens a long URL using the CleanURI service. Send a JSON body with the "url" field and receive the shortened URL in the response.
-URL: https://related-striking-swift.ngrok-free.app/shorten-url
+URL: https://<your ngrok domain>/shorten-url
 Parameters: 
 {
   "type": "object",
