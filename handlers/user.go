@@ -31,9 +31,3 @@ func User(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 }
-
-// Name: random_user
-// Inference description: Generates data for a random user
-// URL: https://<your ngrok domain>/random-user
-// Parameters: { "type": "object" }
-// Return type: String
