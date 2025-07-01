@@ -108,8 +108,7 @@ Return type: String
 Here's some example things:
 
 * `@skillset-example please create a random commit message`
-* `@skillset-example generate a lorem ipsum`
-* `@skillset-example generate a short lorem ipsum with 3 paragraphs`
+* `@skillset-example please short this url https://github.com`
 * `@skillset-example generate random user data`
 
 ## Implementation
