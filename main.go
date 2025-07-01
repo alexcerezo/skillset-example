@@ -18,6 +18,7 @@ func main() {
 func run() error {
 	http.HandleFunc("/random-commit-message", handlers.CommitMessage)
 	http.HandleFunc("/random-user", handlers.User)
+	http.HandleFunc("/shorten-url", handlers.ShortenURL)
 	http.HandleFunc("/_ping", func(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("OK"))
 	})
